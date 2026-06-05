@@ -56,13 +56,19 @@ export class LoginComponentComponent implements OnInit {
   onSubmit() {
     if (this.loginForm.valid) {
       this.loginInvalido = false;
-      this.authService.login(this.loginForm.value as any).subscribe((users) => {
-        if (users.length) {
-          this.router.navigate(['/home']);
-        } else {
+      this.authService.login(this.loginForm.value as any).subscribe({
+        next: (response) => {
+          if (response?.user) {
+            this.router.navigate(['/home']);
+          } else {
+            console.error('Email ou senha inválidos');
+            this.loginInvalido = true;
+          }
+        },
+        error: () => {
           console.error('Email ou senha inválidos');
           this.loginInvalido = true;
-        }
+        },
       });
     }
   }

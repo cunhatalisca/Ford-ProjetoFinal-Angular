@@ -1,0 +1,742 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Administrador do Sistema",
+      "email": "admin3213@email.com",
+      "phone": "71999999999",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "1c4d",
+      "name": "uelisson",
+      "email": "teste@teste.com",
+      "phone": "71900000000",
+      "password": "teste@123",
+      "repeatPassword": "teste@123",
+      "checkboxTermos": true,
+      "checkboxNewsLetter": false,
+      "role": "usuario"
+    },
+    {
+      "id": "f7dd",
+      "name": "UelissonTest2",
+      "email": "uelissonteste@gmail.com",
+      "phone": "71929292929",
+      "password": "uelisson",
+      "repeatPassword": "uelisson",
+      "checkboxTermos": true,
+      "checkboxNewsLetter": true,
+      "role": "usuario"
+    },
+    {
+      "id": "e4cf",
+      "name": "Jailson D Kelly Thomas",
+      "email": "jailson@gmail.com",
+      "phone": "71982828282",
+      "password": "teste123",
+      "repeatPassword": "teste123",
+      "checkboxTermos": true,
+      "checkboxNewsLetter": false,
+      "role": "usuario"
+    },
+    {
+      "id": "18c1",
+      "name": "Kelly Ramos",
+      "email": "kelly@gmail.com",
+      "phone": "71838383838",
+      "password": "teste123",
+      "repeatPassword": "teste123",
+      "checkboxTermos": true,
+      "checkboxNewsLetter": false,
+      "role": "usuario"
+    }
+  ],
+  "cars": [
+    {
+      "nome": "Mustang GT 5.0",
+      "modelo": "SUV 2025",
+      "ano": 2023,
+      "preco": 529000,
+      "estoque": 1,
+      "descricao": "O Ford Mustang GT 5.0 é um ícone americano que combina desempenho bruto com um design musculoso e atemporal. No coração dessa máquina está o lendário motor Coyote V8 de 5.0 litros, que entrega uma potência impressionante e um ronco inconfundível, característico dos muscle cars. A aceleração é visceral, garantindo uma experiência de condução emocionante tanto nas ruas quanto nas pistas. \n Em termos de design, o Mustang GT 5.0 mantém as linhas clássicas que o tornaram famoso, mas com toques modernos que o deixam ainda mais agressivo e aerodinâmico. Seu interior é focado no motorista, com materiais de qualidade e tecnologia intuitiva, oferecendo conforto e conectividade para o dia a dia. \n Para os entusiastas da performance, o Mustang GT 5.0 oferece opções de transmissão manual ou automática de última geração, suspensão ajustada para otimizar a dirigibilidade e sistemas de freio de alta performance. É um carro que proporciona uma conexão autêntica com a estrada, seja em um passeio tranquilo ou em uma pilotagem mais esportiva",
+      "imagem_principal": "carros/carro-branco-card.png",
+      "cores": [
+        {
+          "nome": "Branco Cristal",
+          "precoAdicional": 2500,
+          "codigoCor": "#F0F0F0",
+          "imagem": "/carros/carro-branco-card.png"
+        },
+        {
+          "nome": "Vermelho Sangue",
+          "precoAdicional": 3000,
+          "codigoCor": "#FF0000",
+          "imagem": "/carros/mustang/mustang-vermelho.png"
+        },
+        {
+          "nome": "Azul Safira",
+          "precoAdicional": 2000,
+          "codigoCor": "#0000FF",
+          "imagem": "/carros/mustang/mustang-azul.png"
+        },
+        {
+          "nome": "Vantablack",
+          "precoAdicional": 3000,
+          "codigoCor": "#000000",
+          "imagem": "/carros/mustang/mustang-preto.png"
+        }
+      ],
+      "combustiveis": "Gasolina",
+      "destaque": true,
+      "categoria": "Esportivo",
+      "historia": "O Ford Mustang é um dos carros mais icônicos e reconhecidos do mundo, com uma história rica que remonta a mais de cinco décadas. Lançado pela primeira vez em 1964, o Mustang rapidamente se tornou um símbolo da cultura automotiva americana, representando liberdade, desempenho e estilo. O modelo original foi projetado para ser acessível e atraente para uma ampla gama de consumidores, especialmente os jovens, e sua combinação de design esportivo e preço competitivo ajudou a estabelecer o segmento dos 'pony cars'. \n Ao longo dos anos, o Mustang passou por várias gerações e atualizações, cada uma trazendo inovações tecnológicas e melhorias de desempenho. Desde os motores V8 potentes até as versões mais recentes com tecnologia avançada, o Mustang sempre manteve seu apelo como um carro divertido de dirigir. \n O Mustang também teve um impacto significativo na cultura popular, aparecendo em inúmeros filmes, programas de TV e músicas, solidificando seu status como um ícone cultural. Hoje, o Ford Mustang continua a ser um dos carros esportivos mais populares do mundo, combinando tradição com inovação para atrair tanto entusiastas de longa data quanto novos fãs.",
+      "especificacoes": {
+        "motor": "2.0 Turbo Flex",
+        "potencia": "250 cv",
+        "torque": "300 Nm",
+        "aceleracao": "0 a 100 km/h em 7.5s",
+        "suspensao": "Independente nas quatro rodas",
+        "velocidade_maxima": "240 km/h",
+        "combustivel": "Gasolina",
+        "tracao": "Dianteira",
+        "aceleracao_0_100": "7.5 segundos"
+      },
+      "equipamentos": {
+        "seguranca": [
+          "07 Airbags – 02 dianteiros, 02 laterais dianteiros, 02 cortinas e 01 joelho do passageiro",
+          "Alarme de segurança com imobilizador e sensores de inclinação",
+          "Alerta de colisão frontal",
+          "Assistente de frenagem autônoma (AEB) com detecção de pedestre",
+          "Assistente de Partida em Rampas (HLA)",
+          "Assistente de permanência e centralização em faixa",
+          "Assistente de manobras evasivas",
+          "Cintos de segurança traseiros de 3 pontos",
+          "Espelho retrovisor interno eletrocrômico"
+        ],
+        "tecnologia": [
+          "Ar-condicionado automático digital de duas zonas",
+          "Câmera de ré",
+          "Carregador de celular por indução",
+          "Chave com sensor de presença: Acesso Inteligente e Partida sem chave (Ford Power)",
+          "Freio de mão eletrônico",
+          "Função Auto Hold",
+          "Painel de Instrumentos digital de 12.4\"",
+          "Sensores traseiros de estacionamento",
+          "Vidros elétricos com abertura e fechamento com um toque para cima/baixo"
+        ],
+        "interior": [
+          "Ajuste de altura e profundidade do volante",
+          "Banco traseiro rebatível",
+          "Bancos dianteiros aquecidos e refrigerados com ajustes elétricos",
+          "Bancos parcialmente revestidos em couro com costuras contrastantes",
+          "Console central com porta-objetos e descansa braço integrado",
+          "Emblema interno Mustang",
+          "Iluminação interna ambiente configurável",
+          "Luz de leitura",
+          "Painel de instrumentos digital e tela touch screen integrados",
+          "Para-sol com espelho e luzes de cortesia (motorista / passageiro)",
+          "Tapetes de carpete com costuras contrastantes"
+        ]
+      },
+      "galeria": [
+        "/carros/mustang/card-mustang-main.png",
+        "/carros/mustang/fordmustang_bluecar.avif",
+        "/carros/mustang/fordmustang_cadeiras.avif",
+        "/carros/mustang/fordmustang_carros.avif",
+        "/carros/mustang/fordmustang_marcha.avif",
+        "/carros/mustang/fordmustang_phone.avif",
+        "/carros/mustang/fordmustang_volante.avif",
+        "/carros/mustang/fordmustang_cadeiras2.avif"
+      ],
+      "id": "1",
+      "updatedAt": "2025-10-11T19:51:13.747Z"
+    },
+    {
+      "nome": "Ford Maverick",
+      "modelo": "Picape 2025",
+      "ano": 2025,
+      "preco": 239990,
+      "estoque": 98,
+      "descricao": "Uma picape versátil, robusta e ideal para uso urbano e fora de estrada.",
+      "imagem_principal": "carros/carro-verde-card.png",
+      "cores": [
+        {
+          "nome": "Verde Esmeralda",
+          "precoAdicional": 0,
+          "codigoCor": "#003400",
+          "imagem": "carros/carro-verde-card.png"
+        },
+        {
+          "nome": "Branco Cristal",
+          "precoAdicional": 3000,
+          "codigoCor": "#FFFFFF",
+          "imagem": "/carros/maverick/maverick-branco.png"
+        }
+      ],
+      "combustiveis": "Etanol",
+      "destaque": true,
+      "categoria": "Picape",
+      "historia": "O Ford Maverick é uma picape compacta que foi introduzida pela Ford em 2021, marcando o retorno da marca ao segmento de picapes pequenas após um hiato de várias décadas. Projetada para atender às necessidades dos consumidores modernos, o Maverick combina a praticidade e a funcionalidade de uma picape com o conforto e a eficiência de um veículo urbano. Com um design robusto e contemporâneo, o Maverick apresenta linhas aerodinâmicas e uma postura imponente, destacando-se tanto na cidade quanto em terrenos mais desafiadores. \n O interior do Maverick é focado no conforto e na tecnologia, oferecendo uma cabine espaçosa com materiais de alta qualidade e uma série de recursos tecnológicos, incluindo uma central multimídia avançada e conectividade para dispositivos móveis. A versatilidade é um dos pontos fortes do Maverick, com uma caçamba funcional que pode ser adaptada para diferentes usos, desde transporte de cargas até atividades recreativas. \n O Ford Maverick está disponível com opções de motorização eficientes, incluindo um motor híbrido que proporciona excelente economia de combustível sem comprometer o desempenho. Com sua combinação única de estilo, funcionalidade e inovação, o Ford Maverick se posiciona como uma escolha atraente para aqueles que buscam uma picape prática e moderna.",
+      "especificacoes": {
+        "motor": "2.0 EcoBoost Turbo Flex",
+        "potencia": "253 cv",
+        "torque": "380 Nm",
+        "aceleracao": "0 a 100 km/h em 7.2s",
+        "suspensao": "Independente na dianteira, eixo rígido na traseira",
+        "velocidade_maxima": "210 km/h",
+        "combustivel": "Gasolina/Etanol",
+        "tracao": "Integral AWD",
+        "aceleracao_0_100": "7.2 segundos"
+      },
+      "equipamentos": {
+        "seguranca": [
+          "7 Airbags",
+          "Assistente de permanência em faixa",
+          "Controle eletrônico de estabilidade"
+        ],
+        "tecnologia": [
+          "Central multimídia SYNC com tela de 8\"",
+          "Compatibilidade Android Auto e Apple CarPlay",
+          "Câmera de ré"
+        ],
+        "interior": [
+          "Bancos em tecido premium",
+          "Ar-condicionado digital dual zone",
+          "Porta-objetos inteligentes"
+        ]
+      },
+      "galeria": [
+        "/carros/maverick/ford-maverick-carregando.jpeg",
+        "/carros/maverick/ford-maverick-fora.jpeg",
+        "/carros/maverick/ford-maverick-lateral.jpeg",
+        "/carros/maverick/ford-maverick-lateralinteira.jpeg",
+        "/carros/maverick/ford-maverick-radio.jpeg",
+        "/carros/maverick/ford-maverick-sensor.jpeg",
+        "/carros/maverick/ford-maverick-volante.jpeg"
+      ],
+      "id": "2"
+    },
+    {
+      "nome": "Mustang Mach-E",
+      "modelo": "SUV Elétrico 2025",
+      "ano": 2025,
+      "preco": 389990,
+      "estoque": 98,
+      "descricao": "SUV 100% elétrico inspirado no ícone Mustang, unindo performance, autonomia e tecnologia de ponta.",
+      "imagem_principal": "carros/carro-amarelo-card.png",
+      "cores": [
+        {
+          "nome": "Amarelo Ouro",
+          "precoAdicional": 0,
+          "codigoCor": "#FFC222",
+          "imagem": "carros/carro-amarelo-card.png"
+        },
+        {
+          "nome": "Azul Safira",
+          "precoAdicional": 3000,
+          "codigoCor": "#00A8FF",
+          "imagem": "/carros/mustangMechE/mechE-Azul.png"
+        }
+      ],
+      "combustiveis": "Eletrico",
+      "destaque": false,
+      "categoria": "SUV",
+      "historia": "O Ford Mustang Mach-E representa uma nova era para a icônica linha Mustang, trazendo a emoção e o desempenho característicos da marca para o mundo dos veículos elétricos. Lançado em 2020, o Mach-E foi desenvolvido para oferecer uma experiência de condução dinâmica, combinando a potência instantânea dos motores elétricos com um design moderno e aerodinâmico. Com várias opções de bateria e tração, o Mach-E atende a diferentes necessidades, desde trajetos urbanos até aventuras mais longas, tudo isso com zero emissões. Seu interior é equipado com tecnologia avançada, incluindo uma central multimídia de última geração e recursos de assistência ao motorista, garantindo conforto e segurança. O Mustang Mach-E não é apenas um SUV elétrico; é uma declaração de que o futuro da mobilidade pode ser emocionante e sustentável.",
+      "especificacoes": {
+        "motor": "Elétrico Dual Motor",
+        "potencia": "487 cv",
+        "torque": "860 Nm",
+        "aceleracao": "0 a 100 km/h em 3.7s",
+        "suspensao": "Independente nas quatro rodas",
+        "velocidade_maxima": "200 km/h",
+        "combustivel": "Elétrico",
+        "tracao": "Integral AWD",
+        "aceleracao_0_100": "3.7 segundos"
+      },
+      "equipamentos": {
+        "seguranca": [
+          "Assistente de frenagem de emergência",
+          "Piloto automático adaptativo",
+          "Alerta de tráfego cruzado"
+        ],
+        "tecnologia": [
+          "Central multimídia vertical de 15,5\"",
+          "Atualizações remotas OTA",
+          "Painel digital configurável"
+        ],
+        "interior": [
+          "Bancos em couro ecológico",
+          "Iluminação ambiente em LED",
+          "Sistema de som premium B&O"
+        ]
+      },
+      "galeria": [
+        "/carros/mustangMechE/MechE-banco.jpeg",
+        "/carros/mustangMechE/mechE-capu.jpeg",
+        "/carros/mustangMechE/mechE-dentro.jpeg",
+        "/carros/mustangMechE/mechE-esportivo.jpeg",
+        "/carros/mustangMechE/mechE-fora.jpeg",
+        "/carros/mustangMechE/MechE-marcha.jpeg",
+        "/carros/mustangMechE/mechE-traseira.jpeg"
+      ],
+      "id": "3"
+    },
+    {
+      "nome": "Ford Transit Minibus",
+      "modelo": "Van 2025",
+      "ano": 2025,
+      "preco": 319990,
+      "estoque": 0,
+      "descricao": "Van confortável e espaçosa para transporte de passageiros, ideal para uso comercial e corporativo.",
+      "imagem_principal": "carros/Forgao.png",
+      "cores": [
+        {
+          "nome": "Branco",
+          "precoAdicional": 0,
+          "codigoCor": "#FFFFFF",
+          "imagem": "carros/Forgao.png"
+        },
+        {
+          "nome": "Preto",
+          "precoAdicional": 3000,
+          "codigoCor": "#000000",
+          "imagem": "/carros/forgao/forgao-preto.png"
+        }
+      ],
+      "combustiveis": "Diesel",
+      "destaque": false,
+      "categoria": "SUV",
+      "historia": "A Ford Transit Minibus é uma van projetada para atender às necessidades de transporte de passageiros, oferecendo uma combinação de espaço, conforto e versatilidade. Parte da renomada linha Ford Transit, a Minibus é ideal para empresas, instituições educacionais e serviços de transporte que exigem um veículo confiável e eficiente. Com capacidade para acomodar até 15 passageiros, a Transit Minibus é equipada com assentos confortáveis e um interior espaçoso, garantindo uma viagem agradável para todos os ocupantes. \n O design exterior da Transit Minibus é funcional e robusto, refletindo a durabilidade e a praticidade que são marcas registradas da Ford. A van também oferece uma série de recursos tecnológicos e de segurança, incluindo sistemas avançados de assistência ao motorista, conectividade para dispositivos móveis e opções de entretenimento a bordo. \n A Ford Transit Minibus é movida por um motor diesel eficiente, proporcionando um equilíbrio ideal entre desempenho e economia de combustível. Com sua combinação de capacidade, conforto e tecnologia, a Transit Minibus se destaca como uma escolha confiável para quem precisa de um veículo de transporte de passageiros versátil e bem equipado.",
+      "especificacoes": {
+        "motor": "2.2 Diesel Turbo",
+        "potencia": "165 cv",
+        "torque": "390 Nm",
+        "aceleracao": "0 a 100 km/h em 14s",
+        "suspensao": "Independente na dianteira, eixo rígido na traseira",
+        "velocidade_maxima": "160 km/h",
+        "combustivel": "Diesel",
+        "tracao": "Traseira",
+        "aceleracao_0_100": "14 segundos"
+      },
+      "equipamentos": {
+        "seguranca": [
+          "Freios ABS com EBD",
+          "Controle eletrônico de estabilidade",
+          "Assistente de partida em rampa"
+        ],
+        "tecnologia": [
+          "Central multimídia com tela de 8\"",
+          "Ar-condicionado dianteiro e traseiro",
+          "Portas USB para passageiros"
+        ],
+        "interior": [
+          "Bancos reclináveis em tecido",
+          "Espaço para até 15 passageiros",
+          "Iluminação interna em LED"
+        ]
+      },
+      "galeria": [
+        "/carros/forgao/ford-transit.jpg"
+      ],
+      "id": "4",
+      "updatedAt": "2025-10-11T19:51:52.843Z"
+    },
+    {
+      "id": "5",
+      "modelo": "SUV Off-Road 2025",
+      "createdAt": "2025-09-20T10:00:00Z",
+      "updatedAt": "2025-10-28T15:30:00Z",
+      "estoque": 40,
+      "nome": "Ford Bronco",
+      "cores": [
+        {
+          "nome": "Preto",
+          "precoAdicional": 0,
+          "codigoCor": "#000000",
+          "imagem": "carros/Bronco.png"
+        },
+        {
+          "nome": "Amarelo Ouro",
+          "precoAdicional": 3000,
+          "codigoCor": "#FFC222",
+          "imagem": "/carros/bronco/bronco-amarelo.png"
+        }
+      ],
+      "preco": 459990,
+      "combustiveis": "Gasolina",
+      "destaque": false,
+      "descricao": "SUV robusto e off-road, inspirado no clássico Bronco, preparado para qualquer terreno.",
+      "categoria": "SUV",
+      "ano": 2025,
+      "historia": "O Ford Bronco é um SUV icônico que foi originalmente lançado na década de 1960, rapidamente se tornando um símbolo de aventura e liberdade ao ar livre. Após um hiato de várias décadas, o Bronco foi reintroduzido em 2020, trazendo de volta seu espírito aventureiro com um design moderno e capacidades off-road aprimoradas. O novo Bronco mantém as linhas robustas e angulares que caracterizaram o modelo original, mas incorpora tecnologias e recursos contemporâneos para atender às demandas dos entusiastas de veículos off-road. \n Equipado com motores potentes e uma suspensão reforçada, o Bronco é projetado para enfrentar terrenos desafiadores, desde trilhas acidentadas até dunas de areia. Seu sistema de tração nas quatro rodas avançado e modos de condução personalizáveis permitem que os motoristas adaptem o veículo às condições do terreno, garantindo desempenho e controle excepcionais. \n O interior do Bronco é focado no conforto e na funcionalidade, com materiais duráveis e tecnologia intuitiva, incluindo uma central multimídia com conectividade para dispositivos móveis. Com sua combinação de herança clássica e inovação moderna, o Ford Bronco continua a ser uma escolha popular para aqueles que buscam aventura e exploração fora das estradas convencionais.",
+      "especificacoes": {
+        "motor": "2.7 V6 EcoBoost Turbo",
+        "potencia": "330 cv",
+        "torque": "563 Nm",
+        "aceleracao": "0 a 100 km/h em 6.7s",
+        "suspensao": "Off-road reforçada com amortecedores Bilstein",
+        "velocidade_maxima": "210 km/h",
+        "combustivel": "Gasolina",
+        "tracao": "Integral AWD com reduzida",
+        "aceleracao_0_100": "6.7 segundos"
+      },
+      "equipamentos": {
+        "seguranca": [
+          "Assistente de descida em rampa",
+          "7 Airbags",
+          "Controle de tração para off-road"
+        ],
+        "tecnologia": [
+          "Painel digital de 12\"",
+          "Central multimídia SYNC 4",
+          "Sistema de som premium Bang & Olufsen"
+        ],
+        "interior": [
+          "Bancos em couro resistentes à água",
+          "Ar-condicionado digital dual zone",
+          "Painéis removíveis para experiência ao ar livre"
+        ]
+      },
+      "imagem_principal": "carros/Bronco.png",
+      "galeria": [
+        "/carros/bronco/bronco-areia.avif",
+        "/carros/bronco/bronco-cara.avif",
+        "/carros/bronco/bronco-cima.avif",
+        "/carros/bronco/bronco-dentro.avif",
+        "/carros/bronco/bronco-marcha.jpeg",
+        "/carros/bronco/bronco-praia.avif",
+        "/carros/bronco/bronco-volante.avif"
+      ]
+    },
+    {
+      "nome": "Ford Territory",
+      "modelo": "SUV Médio 2025",
+      "ano": 2025,
+      "preco": 199990,
+      "estoque": 1,
+      "descricao": "SUV médio moderno e tecnológico, ideal para famílias e viagens urbanas ou rodoviárias.",
+      "imagem_principal": "carros/Territory.png",
+      "cores": [
+        {
+          "nome": "Branco Cristal",
+          "precoAdicional": 2500,
+          "codigoCor": "#F0F0F0",
+          "imagem": "/carros/carro-branco-card.png"
+        },
+        {
+          "nome": "Vermelho Sangue",
+          "precoAdicional": 3000,
+          "codigoCor": "#FF0000",
+          "imagem": "/carros/mustang/mustang-vermelho.png"
+        },
+        {
+          "nome": "Azul Safira",
+          "precoAdicional": 2000,
+          "codigoCor": "#0000FF",
+          "imagem": "/carros/mustang/mustang-azul.png"
+        },
+        {
+          "nome": "Vantablack",
+          "precoAdicional": 3000,
+          "codigoCor": "#000000",
+          "imagem": "/carros/mustang/mustang-preto.png"
+        }
+      ],
+      "combustiveis": "Gasolina",
+      "destaque": true,
+      "categoria": "SUV",
+      "historia": "O Ford Territory é um SUV médio que foi introduzido pela Ford para atender à crescente demanda por veículos versáteis e familiares no segmento de utilitários esportivos. Lançado inicialmente em mercados como China e Austrália, o Territory rapidamente ganhou popularidade devido ao seu design moderno, tecnologia avançada e conforto. Com um foco claro em praticidade e funcionalidade, o Ford Territory é ideal para famílias que buscam um veículo espaçoso, seguro e eficiente para uso diário, bem como para viagens mais longas. \n O design do Territory combina linhas elegantes com uma postura robusta, refletindo a identidade da Ford enquanto oferece uma presença imponente na estrada. O interior é cuidadosamente projetado para maximizar o espaço e o conforto dos ocupantes, com materiais de alta qualidade e uma série de recursos tecnológicos, incluindo uma central multimídia intuitiva e conectividade para dispositivos móveis. \n Equipado com motores eficientes e uma suspensão ajustada para proporcionar uma condução suave, o Ford Territory oferece um equilíbrio ideal entre desempenho e economia de combustível. Com sua combinação de estilo, tecnologia e praticidade, o Ford Territory se destaca como uma escolha atraente para aqueles que procuram um SUV médio confiável e bem equipado.",
+      "especificacoes": {
+        "motor": "1.5 EcoBoost Turbo",
+        "potencia": "170 cv",
+        "torque": "260 Nm",
+        "aceleracao": "0 a 100 km/h em 9.8s",
+        "suspensao": "Independente nas quatro rodas",
+        "velocidade_maxima": "190 km/h",
+        "combustivel": "Gasolina",
+        "tracao": "Dianteira",
+        "aceleracao_0_100": "9.8 segundos"
+      },
+      "equipamentos": {
+        "seguranca": [
+          "Controle eletrônico de estabilidade",
+          "Assistente de permanência em faixa",
+          "Alerta de ponto cego"
+        ],
+        "tecnologia": [
+          "Central multimídia com tela de 10\"",
+          "Compatibilidade Android Auto e Apple CarPlay",
+          "Carregador wireless"
+        ],
+        "interior": [
+          "Bancos em couro sintético",
+          "Iluminação ambiente",
+          "Ar-condicionado digital dual zone"
+        ]
+      },
+      "galeria": [
+        "/carros/territory/territory-banco.avif",
+        "/carros/territory/territory-fora.avif",
+        "/carros/territory/territory-rodas.avif",
+        "/carros/territory/territory-tela.jpg"
+      ],
+      "id": "6",
+      "updatedAt": "2025-10-11T13:52:38.584Z"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "8bbd",
+      "user": {
+        "id": "f7dd",
+        "name": "UelissonTest2",
+        "email": "uelissonteste@gmail.com",
+        "phone": "71929292929",
+        "password": "uelisson",
+        "repeatPassword": "uelisson",
+        "checkboxTermos": true,
+        "checkboxNewsLetter": true,
+        "role": "usuario"
+      },
+      "car": {
+        "id": "1",
+        "modelo": "SUV 2025",
+        "nome": "Mustang GT 5.0",
+        "cores": [
+          {
+            "nome": "Branco Cristal",
+            "precoAdicional": 2500,
+            "codigoCor": "#F0F0F0",
+            "imagem": "/carros/carro-branco-card.png"
+          },
+          {
+            "nome": "Vermelho Sangue",
+            "precoAdicional": 3000,
+            "codigoCor": "#FF0000",
+            "imagem": "/carros/mustang/mustang-vermelho.png"
+          },
+          {
+            "nome": "Azul Safira",
+            "precoAdicional": 2000,
+            "codigoCor": "#0000FF",
+            "imagem": "/carros/mustang/mustang-azul.png"
+          },
+          {
+            "nome": "Vantablack",
+            "precoAdicional": 3000,
+            "codigoCor": "#000000",
+            "imagem": "/carros/mustang/mustang-preto.png"
+          }
+        ],
+        "preco": 529000,
+        "combustiveis": "Gasolina",
+        "destaque": true,
+        "descricao": "O Ford Mustang GT 5.0 é um ícone americano que combina desempenho bruto com um design musculoso e atemporal. No coração dessa máquina está o lendário motor Coyote V8 de 5.0 litros, que entrega uma potência impressionante e um ronco inconfundível, característico dos muscle cars. A aceleração é visceral, garantindo uma experiência de condução emocionante tanto nas ruas quanto nas pistas. \n Em termos de design, o Mustang GT 5.0 mantém as linhas clássicas que o tornaram famoso, mas com toques modernos que o deixam ainda mais agressivo e aerodinâmico. Seu interior é focado no motorista, com materiais de qualidade e tecnologia intuitiva, oferecendo conforto e conectividade para o dia a dia. \n Para os entusiastas da performance, o Mustang GT 5.0 oferece opções de transmissão manual ou automática de última geração, suspensão ajustada para otimizar a dirigibilidade e sistemas de freio de alta performance. É um carro que proporciona uma conexão autêntica com a estrada, seja em um passeio tranquilo ou em uma pilotagem mais esportiva",
+        "categoria": "Esportivo",
+        "ano": 2023,
+        "historia": "O Ford Mustang é um dos carros mais icônicos e reconhecidos do mundo, com uma história rica que remonta a mais de cinco décadas. Lançado pela primeira vez em 1964, o Mustang rapidamente se tornou um símbolo da cultura automotiva americana, representando liberdade, desempenho e estilo. O modelo original foi projetado para ser acessível e atraente para uma ampla gama de consumidores, especialmente os jovens, e sua combinação de design esportivo e preço competitivo ajudou a estabelecer o segmento dos 'pony cars'. \n Ao longo dos anos, o Mustang passou por várias gerações e atualizações, cada uma trazendo inovações tecnológicas e melhorias de desempenho. Desde os motores V8 potentes até as versões mais recentes com tecnologia avançada, o Mustang sempre manteve seu apelo como um carro divertido de dirigir. \n O Mustang também teve um impacto significativo na cultura popular, aparecendo em inúmeros filmes, programas de TV e músicas, solidificando seu status como um ícone cultural. Hoje, o Ford Mustang continua a ser um dos carros esportivos mais populares do mundo, combinando tradição com inovação para atrair tanto entusiastas de longa data quanto novos fãs.",
+        "especificacoes": {
+          "motor": "2.0 Turbo Flex",
+          "potencia": "250 cv",
+          "torque": "300 Nm",
+          "aceleracao": "0 a 100 km/h em 7.5s",
+          "suspensao": "Independente nas quatro rodas",
+          "velocidade_maxima": "240 km/h",
+          "combustivel": "Gasolina",
+          "tracao": "Dianteira",
+          "aceleracao_0_100": "7.5 segundos"
+        },
+        "equipamentos": {
+          "seguranca": [
+            "07 Airbags – 02 dianteiros, 02 laterais dianteiros, 02 cortinas e 01 joelho do passageiro",
+            "Alarme de segurança com imobilizador e sensores de inclinação",
+            "Alerta de colisão frontal",
+            "Assistente de frenagem autônoma (AEB) com detecção de pedestre",
+            "Assistente de Partida em Rampas (HLA)",
+            "Assistente de permanência e centralização em faixa",
+            "Assistente de manobras evasivas",
+            "Cintos de segurança traseiros de 3 pontos",
+            "Espelho retrovisor interno eletrocrômico"
+          ],
+          "tecnologia": [
+            "Ar-condicionado automático digital de duas zonas",
+            "Câmera de ré",
+            "Carregador de celular por indução",
+            "Chave com sensor de presença: Acesso Inteligente e Partida sem chave (Ford Power)",
+            "Freio de mão eletrônico",
+            "Função Auto Hold",
+            "Painel de Instrumentos digital de 12.4\"",
+            "Sensores traseiros de estacionamento",
+            "Vidros elétricos com abertura e fechamento com um toque para cima/baixo"
+          ],
+          "interior": [
+            "Ajuste de altura e profundidade do volante",
+            "Banco traseiro rebatível",
+            "Bancos dianteiros aquecidos e refrigerados com ajustes elétricos",
+            "Bancos parcialmente revestidos em couro com costuras contrastantes",
+            "Console central com porta-objetos e descansa braço integrado",
+            "Emblema interno Mustang",
+            "Iluminação interna ambiente configurável",
+            "Luz de leitura",
+            "Painel de instrumentos digital e tela touch screen integrados",
+            "Para-sol com espelho e luzes de cortesia (motorista / passageiro)",
+            "Tapetes de carpete com costuras contrastantes",
+            "Volante aquecido e revestido em couro"
+          ]
+        },
+        "imagem_principal": "carros/carro-branco-card.png",
+        "galeria": [
+          "/carros/mustang/card-mustang-main.png",
+          "/carros/mustang/fordmustang_bluecar.avif",
+          "/carros/mustang/fordmustang_cadeiras.avif",
+          "/carros/mustang/fordmustang_carros.avif",
+          "/carros/mustang/fordmustang_marcha.avif",
+          "/carros/mustang/fordmustang_phone.avif",
+          "/carros/mustang/fordmustang_volante.avif",
+          "/carros/mustang/fordmustang_cadeiras2.avif"
+        ]
+      },
+      "selectedColor": {
+        "nome": "Branco Cristal",
+        "precoAdicional": 2500,
+        "codigoCor": "#F0F0F0",
+        "imagem": "/carros/carro-branco-card.png"
+      },
+      "status": "aprovado",
+      "payment": {
+        "paymentMethod": "card"
+      },
+      "purchaseDate": "2025-09-28T00:52:50.783Z"
+    },
+    {
+      "id": "8e9a",
+      "user": {
+        "id": "1c4d",
+        "name": "uelisson",
+        "email": "teste@teste.com",
+        "phone": "71900000000",
+        "password": "teste@123",
+        "repeatPassword": "teste@123",
+        "checkboxTermos": true,
+        "checkboxNewsLetter": false,
+        "role": "usuario"
+      },
+      "car": {
+        "id": "1",
+        "modelo": "SUV 2025",
+        "createdAt": "2025-09-20T10:00:00Z",
+        "updatedAt": "2025-09-28T15:30:00Z",
+        "estoque": 1,
+        "nome": "Mustang GT 5.0",
+        "cores": [
+          {
+            "nome": "Branco Cristal",
+            "precoAdicional": 2500,
+            "codigoCor": "#F0F0F0",
+            "imagem": "/carros/carro-branco-card.png"
+          },
+          {
+            "nome": "Vermelho Sangue",
+            "precoAdicional": 3000,
+            "codigoCor": "#FF0000",
+            "imagem": "/carros/mustang/mustang-vermelho.png"
+          },
+          {
+            "nome": "Azul Safira",
+            "precoAdicional": 2000,
+            "codigoCor": "#0000FF",
+            "imagem": "/carros/mustang/mustang-azul.png"
+          },
+          {
+            "nome": "Vantablack",
+            "precoAdicional": 3000,
+            "codigoCor": "#000000",
+            "imagem": "/carros/mustang/mustang-preto.png"
+          }
+        ],
+        "preco": 529000,
+        "combustiveis": "Gasolina",
+        "destaque": true,
+        "descricao": "O Ford Mustang GT 5.0 é um ícone americano que combina desempenho bruto com um design musculoso e atemporal. No coração dessa máquina está o lendário motor Coyote V8 de 5.0 litros, que entrega uma potência impressionante e um ronco inconfundível, característico dos muscle cars. A aceleração é visceral, garantindo uma experiência de condução emocionante tanto nas ruas quanto nas pistas. \n Em termos de design, o Mustang GT 5.0 mantém as linhas clássicas que o tornaram famoso, mas com toques modernos que o deixam ainda mais agressivo e aerodinâmico. Seu interior é focado no motorista, com materiais de qualidade e tecnologia intuitiva, oferecendo conforto e conectividade para o dia a dia. \n Para os entusiastas da performance, o Mustang GT 5.0 oferece opções de transmissão manual ou automática de última geração, suspensão ajustada para otimizar a dirigibilidade e sistemas de freio de alta performance. É um carro que proporciona uma conexão autêntica com a estrada, seja em um passeio tranquilo ou em uma pilotagem mais esportiva",
+        "categoria": "Esportivo",
+        "ano": 2023,
+        "historia": "O Ford Mustang é um dos carros mais icônicos e reconhecidos do mundo, com uma história rica que remonta a mais de cinco décadas. Lançado pela primeira vez em 1964, o Mustang rapidamente se tornou um símbolo da cultura automotiva americana, representando liberdade, desempenho e estilo. O modelo original foi projetado para ser acessível e atraente para uma ampla gama de consumidores, especialmente os jovens, e sua combinação de design esportivo e preço competitivo ajudou a estabelecer o segmento dos 'pony cars'. \n Ao longo dos anos, o Mustang passou por várias gerações e atualizações, cada uma trazendo inovações tecnológicas e melhorias de desempenho. Desde os motores V8 potentes até as versões mais recentes com tecnologia avançada, o Mustang sempre manteve seu apelo como um carro divertido de dirigir. \n O Mustang também teve um impacto significativo na cultura popular, aparecendo em inúmeros filmes, programas de TV e músicas, solidificando seu status como um ícone cultural. Hoje, o Ford Mustang continua a ser um dos carros esportivos mais populares do mundo, combinando tradição com inovação para atrair tanto entusiastas de longa data quanto novos fãs.",
+        "especificacoes": {
+          "motor": "2.0 Turbo Flex",
+          "potencia": "250 cv",
+          "torque": "300 Nm",
+          "aceleracao": "0 a 100 km/h em 7.5s",
+          "suspensao": "Independente nas quatro rodas",
+          "velocidade_maxima": "240 km/h",
+          "combustivel": "Gasolina",
+          "tracao": "Dianteira",
+          "aceleracao_0_100": "7.5 segundos"
+        },
+        "equipamentos": {
+          "seguranca": [
+            "07 Airbags – 02 dianteiros, 02 laterais dianteiros, 02 cortinas e 01 joelho do passageiro",
+            "Alarme de segurança com imobilizador e sensores de inclinação",
+            "Alerta de colisão frontal",
+            "Assistente de frenagem autônoma (AEB) com detecção de pedestre",
+            "Assistente de Partida em Rampas (HLA)",
+            "Assistente de permanência e centralização em faixa",
+            "Assistente de manobras evasivas",
+            "Cintos de segurança traseiros de 3 pontos",
+            "Espelho retrovisor interno eletrocrômico"
+          ],
+          "tecnologia": [
+            "Ar-condicionado automático digital de duas zonas",
+            "Câmera de ré",
+            "Carregador de celular por indução",
+            "Chave com sensor de presença: Acesso Inteligente e Partida sem chave (Ford Power)",
+            "Freio de mão eletrônico",
+            "Função Auto Hold",
+            "Painel de Instrumentos digital de 12.4\"",
+            "Sensores traseiros de estacionamento",
+            "Vidros elétricos com abertura e fechamento com um toque para cima/baixo"
+          ],
+          "interior": [
+            "Ajuste de altura e profundidade do volante",
+            "Banco traseiro rebatível",
+            "Bancos dianteiros aquecidos e refrigerados com ajustes elétricos",
+            "Bancos parcialmente revestidos em couro com costuras contrastantes",
+            "Console central com porta-objetos e descansa braço integrado",
+            "Emblema interno Mustang",
+            "Iluminação interna ambiente configurável",
+            "Luz de leitura",
+            "Painel de instrumentos digital e tela touch screen integrados",
+            "Para-sol com espelho e luzes de cortesia (motorista / passageiro)",
+            "Tapetes de carpete com costuras contrastantes",
+            "Volante aquecido e revestido em couro"
+          ]
+        },
+        "imagem_principal": "carros/carro-branco-card.png",
+        "galeria": [
+          "/carros/mustang/card-mustang-main.png",
+          "/carros/mustang/fordmustang_bluecar.avif",
+          "/carros/mustang/fordmustang_cadeiras.avif",
+          "/carros/mustang/fordmustang_carros.avif",
+          "/carros/mustang/fordmustang_marcha.avif",
+          "/carros/mustang/fordmustang_phone.avif",
+          "/carros/mustang/fordmustang_volante.avif",
+          "/carros/mustang/fordmustang_cadeiras2.avif"
+        ]
+      },
+      "selectedColor": {
+        "nome": "Branco Cristal",
+        "precoAdicional": 2500,
+        "codigoCor": "#F0F0F0",
+        "imagem": "/carros/carro-branco-card.png"
+      },
+      "payment": {
+        "paymentMethod": "financing",
+        "downPayment": 80000,
+        "installments": "36"
+      },
+      "purchaseDate": "2025-10-09T18:52:54.987Z",
+      "status": "rejeitado"
+    }
+  ]
+}
