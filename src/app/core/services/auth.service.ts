@@ -1,34 +1,41 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap, map } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { User } from '../models/user.model';
 import { StorageService } from './storage.service';
 import { Role } from '../models/role.model';
+import { environment } from '../../../environments/environment';
+
+export interface AuthResponse {
+  token: string;
+  user: User;
+}
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  private readonly apiUrl = 'http://localhost:3001/users';
+  private readonly apiUrl = `${environment.apiUrl}/auth`;
   private readonly userKey = 'currentUser';
+  private readonly tokenKey = 'authToken';
 
   private http = inject(HttpClient);
   private storageService = inject(StorageService);
 
-  register(user: Omit<User, 'role' | 'id'>): Observable<User> {
-    const userWithRole: User = { ...user, role: 'usuario' };
-    return this.http.post<User>(this.apiUrl, userWithRole);
+  register(user: Omit<User, 'role' | 'id'>): Observable<AuthResponse> {
+    return this.http.post<AuthResponse>(`${this.apiUrl}/register`, user);
   }
 
-  login(credentials: Pick<User, 'email' | 'password'>): Observable<User[]> {
+  login(
+    credentials: Pick<User, 'email' | 'password'>
+  ): Observable<AuthResponse> {
     return this.http
-      .get<User[]>(
-        `${this.apiUrl}?email=${credentials.email}&password=${credentials.password}`
-      )
+      .post<AuthResponse>(`${this.apiUrl}/login`, credentials)
       .pipe(
-        tap((users) => {
-          if (users.length) {
-            this.storageService.setItem(this.userKey, users[0]);
+        tap((response) => {
+          if (response?.token) {
+            this.storageService.setItem(this.tokenKey, response.token);
+            this.storageService.setItem(this.userKey, response.user);
           }
         })
       );
@@ -36,10 +43,15 @@ export class AuthService {
 
   logout(): void {
     this.storageService.removeItem(this.userKey);
+    this.storageService.removeItem(this.tokenKey);
   }
 
   getCurrentUser(): User | null {
     return this.storageService.getItem<User>(this.userKey);
+  }
+
+  getToken(): string | null {
+    return this.storageService.getItem<string>(this.tokenKey);
   }
 
   isLoggedIn(): boolean {
