@@ -12,3 +12,13 @@ export interface Purchase {
   purchaseDate: Date;
   status: 'pendente' | 'aprovado' | 'rejeitado';
 }
+
+/**
+ * Payload enxuto enviado ao backend ao concluir uma compra.
+ * O usuario eh identificado pelo token JWT; o estoque eh debitado no servidor.
+ */
+export interface PurchaseRequest {
+  carId: number | string;
+  selectedColor: Cores;
+  payment: PaymentData;
+}

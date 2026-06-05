@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Cars } from '../models/cars.model';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ import { Cars } from '../models/cars.model';
 export class CarsService {
   constructor() {}
 
-  private readonly apiUrl = 'http://localhost:3001/cars';
+  private readonly apiUrl = `${environment.apiUrl}/cars`;
   private http = inject(HttpClient);
 
   getCars(): Observable<Cars[]> {
@@ -21,13 +22,11 @@ export class CarsService {
   }
 
   getFeaturedCars(): Observable<Cars[]> {
-    return this.http.get<Cars[]>(`${this.apiUrl}?destaque=true`);
+    return this.http.get<Cars[]>(`${this.apiUrl}/featured`);
   }
 
   getLastVehicles(): Observable<Cars[]> {
-    return this.http.get<Cars[]>(
-      `${this.apiUrl}?_sort=updatedAt&_order=desc&_limit=4`
-    );
+    return this.http.get<Cars[]>(`${this.apiUrl}/latest`);
   }
 
   addCar(car: Omit<Cars, 'id'>): Observable<Cars> {

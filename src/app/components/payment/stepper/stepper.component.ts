@@ -40,7 +40,7 @@ import { WarningComponent } from './warning/warning.component';
 import { PurchaseService } from '../../../core/services/purchase.service';
 import { AuthService } from '../../../core/services/auth.service';
 import { Router } from '@angular/router';
-import { Purchase } from '../../../core/models/purchase.model';
+import { PurchaseRequest } from '../../../core/models/purchase.model';
 import { User } from '../../../core/models/user.model';
 import { SuccessModalComponent } from '../modal/success-modal/success-modal.component';
 import { EnterPixComponent } from '../modal/enter-pix/enter-pix.component';
@@ -289,25 +289,17 @@ export class StepperComponent implements OnChanges, OnInit {
       return;
     }
 
-    const purchaseData: Omit<Purchase, 'id'> = {
-      user: currentUser,
-      car: this.car,
+    const purchaseData: PurchaseRequest = {
+      carId: this.car.id!,
       selectedColor: this.corSelecionada,
       payment: this.paymentService.getPaymentData(),
-      purchaseDate: new Date(),
-      status: 'pendente',
     };
 
+    // O backend identifica o usuario pelo token JWT, debita o estoque e
+    // registra a compra com status "pendente" de forma transacional.
     this.purchaseService.savePurchase(purchaseData).subscribe({
       next: () => {
         console.log('Compra finalizada com sucesso!');
-        if (this.car && this.car.id) {
-          this.car.estoque -= 1;
-          this.carsService.updateCar(this.car).subscribe({
-            next: () => console.log('Estoque atualizado!'),
-            error: (err) => console.error('Erro ao atualizar o estoque:', err),
-          });
-        }
         this.router.navigate(['/home']);
         this.stepper.reset();
       },
